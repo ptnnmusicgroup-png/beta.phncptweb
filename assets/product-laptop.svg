@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 390" role="img" aria-label="Laptop cute setup">
+  <rect width="520" height="390" rx="36" fill="#f6efe5"/>
+  <circle cx="90" cy="70" r="38" fill="#f5c66b"/>
+  <circle cx="438" cy="88" r="46" fill="#9bdac8"/>
+  <rect x="112" y="92" width="296" height="198" rx="26" fill="#273846"/>
+  <rect x="135" y="116" width="250" height="143" rx="17" fill="#8fd7cd"/>
+  <path d="M135 227c45-45 90-48 135-10 43 36 85 37 115 5v37H135z" fill="#fff8ed" opacity=".55"/>
+  <rect x="81" y="285" width="358" height="40" rx="20" fill="#405c6c"/>
+  <rect x="151" y="301" width="218" height="9" rx="4.5" fill="#fff8ed" opacity=".55"/>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 390" role="img" aria-label="Custom PC case">
+  <rect width="520" height="390" rx="36" fill="#eaf7f1"/>
+  <rect x="150" y="55" width="220" height="290" rx="32" fill="#f9f3e8"/>
+  <rect x="176" y="86" width="168" height="210" rx="23" fill="#273846"/>
+  <circle cx="260" cy="154" r="49" fill="#f08b74"/>
+  <circle cx="260" cy="154" r="24" fill="#f9f3e8"/>
+  <circle cx="260" cy="241" r="45" fill="#84d2bf"/>
+  <circle cx="260" cy="241" r="22" fill="#f9f3e8"/>
+  <rect x="385" y="151" width="58" height="112" rx="24" fill="#f5c66b"/>
+  <rect x="399" y="174" width="30" height="67" rx="15" fill="#fff8ed" opacity=".7"/>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 390" role="img" aria-label="Repair service tools">
+  <rect width="520" height="390" rx="36" fill="#edf3fb"/>
+  <rect x="125" y="102" width="290" height="188" rx="30" fill="#273846"/>
+  <rect x="151" y="127" width="238" height="121" rx="18" fill="#9bdac8"/>
+  <rect x="201" y="282" width="118" height="34" rx="17" fill="#405c6c"/>
+  <path d="M361 83l42 42-142 142-55 12 12-55z" fill="#f08b74"/>
+  <path d="M361 83l42 42" stroke="#fff8ed" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="151" cy="311" r="28" fill="#f5c66b"/>
+</svg>
