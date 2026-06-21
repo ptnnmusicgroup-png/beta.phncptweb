@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Phương Nguyễn Computer | Đồ điện tử cute</title>
+    <meta
+      name="description"
+      content="Phương Nguyễn Computer - shop đồ điện tử, laptop, PC custom, phụ kiện và dịch vụ sửa chữa với phong cách cute riêng."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Phương Nguyễn Computer">
+        <span class="brand-mark">PN</span>
+        <span>
+          <strong>Phương Nguyễn</strong>
+          <small>Computer</small>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Chính">
+        <a href="#products">Sản phẩm</a>
+        <a href="#services">Dịch vụ</a>
+        <a href="#setup">Setup</a>
+        <a href="#contact">Liên hệ</a>
+        <a href="#admin" data-admin-link hidden>Admin</a>
+      </nav>
+      <div class="header-actions">
+        <button class="header-action auth-toggle" type="button" data-auth-open>
+          <span data-auth-label>Đăng nhập</span>
+        </button>
+        <button class="header-action cart-toggle" type="button" data-cart-open>
+          Tư vấn <span data-cart-count>0</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-media" aria-hidden="true">
+          <img src="assets/hero-desk.svg" alt="" />
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow">Cute tech, gọn gàng, có gu</p>
+          <h1>Phương Nguyễn Computer</h1>
+          <p>
+            Laptop, PC custom, phụ kiện và dịch vụ kỹ thuật với tinh thần mềm mại,
+            thân thiện, nhưng vẫn sắc nét như một góc làm việc được chăm chút kỹ.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#products">
+              <span aria-hidden="true">+</span>
+              Xem đồ cute
+            </a>
+            <button class="button secondary" type="button" data-auth-open>
+              <span aria-hidden="true">◎</span>
+              Tài khoản
+            </button>
+            <button class="button secondary" type="button" data-cart-open>
+              <span aria-hidden="true">□</span>
+              Giỏ tư vấn
+            </button>
+          </div>
+        </div>
+        <aside class="hero-note" aria-label="Điểm nổi bật">
+          <span data-hero-badge>Bảo hành rõ ràng</span>
+          <strong data-hero-note>Setup máy theo nhu cầu học, làm, game và sáng tạo.</strong>
+        </aside>
+      </section>
+
+      <section class="ticker" aria-label="Cam kết" data-ticker></section>
+
+      <section class="section intro">
+        <div>
+          <p class="section-kicker">Không cần ồn ào</p>
+          <h2>Đồ điện tử nhìn dễ thương, dùng phải nghiêm túc.</h2>
+        </div>
+        <p>
+          Trang này được render động bằng JavaScript: sản phẩm, bộ lọc, tìm kiếm,
+          mood setup, tài khoản, giỏ tư vấn và nội dung form đều phản hồi theo lựa chọn của bạn.
+        </p>
+      </section>
+
+      <section class="section products" id="products">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Danh mục nổi bật</p>
+            <h2>Chọn nhanh món bạn cần</h2>
+          </div>
+          <div class="product-tools">
+            <label class="search-box">
+              <span>Tìm</span>
+              <input data-search type="search" placeholder="Laptop, PC, SSD..." autocomplete="off" />
+            </label>
+            <div class="filter-tabs" role="tablist" aria-label="Lọc sản phẩm" data-filters></div>
+          </div>
+        </div>
+
+        <div class="result-line" data-result-line></div>
+        <div class="product-grid" data-products></div>
+      </section>
+
+      <section class="section services" id="services">
+        <div class="service-panel">
+          <p class="section-kicker">Dịch vụ kỹ thuật</p>
+          <h2>Máy gặp vấn đề, shop xử lý theo từng bước rõ ràng.</h2>
+          <a class="button primary" href="#contact">Đặt lịch kiểm tra</a>
+        </div>
+        <div class="service-list" data-services></div>
+      </section>
+
+      <section class="section setup" id="setup">
+        <div class="setup-copy">
+          <p class="section-kicker">Gợi ý setup</p>
+          <h2>Một góc bàn có gu bắt đầu từ món đồ vừa đủ.</h2>
+          <p>
+            Chọn mood để trang đề xuất combo và tự cập nhật ghi chú ở hero. Đây là
+            phần dữ liệu động, dễ mở rộng thêm preset sau này.
+          </p>
+        </div>
+        <div class="mood-board" data-mood-board>
+          <div class="mood-actions" data-moods></div>
+          <div class="mood-result" data-mood-result></div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div>
+          <p class="section-kicker">Liên hệ</p>
+          <h2>Phương Nguyễn Computer tư vấn theo máy bạn đang có và ngân sách bạn muốn giữ.</h2>
+          <div class="quote-preview" data-account-preview>
+            Bạn có thể đăng nhập để lưu thông tin tư vấn trên trình duyệt này.
+          </div>
+          <div class="quote-preview" data-quote-preview>
+            Chưa có món nào trong giỏ tư vấn.
+          </div>
+        </div>
+        <form class="contact-form" data-contact-form>
+          <label>
+            Tên của bạn
+            <input type="text" name="name" placeholder="Ví dụ: Minh" required />
+          </label>
+          <label>
+            Bạn cần gì?
+            <select name="need" data-need-select></select>
+          </label>
+          <label>
+            Ngân sách dự kiến
+            <input type="text" name="budget" placeholder="Ví dụ: 12 triệu" />
+          </label>
+          <label>
+            Ghi chú
+            <textarea name="note" rows="4" placeholder="Nhu cầu, tình trạng máy, cấu hình mong muốn..."></textarea>
+          </label>
+          <button class="button primary" type="submit">Gửi yêu cầu</button>
+          <p class="form-message" data-form-message aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section class="section admin-dashboard" id="admin" data-admin-section hidden>
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Admin Dashboard</p>
+            <h2>Quản trị Phương Nguyễn Computer</h2>
+          </div>
+          <button class="button secondary" type="button" data-admin-refresh>Làm mới dữ liệu</button>
+        </div>
+
+        <div class="admin-grid">
+          <article class="admin-panel">
+            <p class="section-kicker">Khách hôm nay</p>
+            <strong class="admin-number" data-today-visitors>0</strong>
+            <span data-today-label>Đang đọc Firestore...</span>
+          </article>
+
+          <article class="admin-panel">
+            <p class="section-kicker">Đơn hàng</p>
+            <strong class="admin-number" data-order-count>0</strong>
+            <span>Đơn tư vấn đã lưu trên Firestore</span>
+          </article>
+
+          <article class="admin-panel">
+            <p class="section-kicker">Bài viết</p>
+            <strong class="admin-number" data-post-count>0</strong>
+            <span>Bài viết admin đã thêm</span>
+          </article>
+        </div>
+
+        <div class="admin-workspace">
+          <form class="admin-panel admin-form" data-post-form>
+            <p class="section-kicker">Thêm bài viết</p>
+            <label>
+              Tiêu đề
+              <input type="text" name="title" placeholder="Ví dụ: Cách chọn laptop học tập" required />
+            </label>
+            <label>
+              Nội dung
+              <textarea name="content" rows="5" placeholder="Nhập nội dung bài viết..." required></textarea>
+            </label>
+            <button class="button primary" type="submit">Đăng bài</button>
+            <p class="form-message" data-admin-message aria-live="polite"></p>
+          </form>
+
+          <div class="admin-panel">
+            <div class="admin-list-head">
+              <p class="section-kicker">Đơn hàng mới</p>
+              <span>Collection: orders</span>
+            </div>
+            <div class="admin-list" data-admin-orders></div>
+          </div>
+
+          <div class="admin-panel">
+            <div class="admin-list-head">
+              <p class="section-kicker">Bài viết gần đây</p>
+              <span>Collection: posts</span>
+            </div>
+            <div class="admin-list" data-admin-posts></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <aside class="cart-drawer" data-cart-drawer aria-hidden="true" aria-label="Giỏ tư vấn">
+      <div class="cart-panel">
+        <div class="cart-head">
+          <div>
+            <p class="section-kicker">Giỏ tư vấn</p>
+            <h2>Món bạn đang để ý</h2>
+          </div>
+          <button class="icon-button" type="button" data-cart-close aria-label="Đóng giỏ tư vấn">×</button>
+        </div>
+        <div class="cart-items" data-cart-items></div>
+        <div class="cart-total">
+          <span>Tạm tính</span>
+          <strong data-cart-total>0đ</strong>
+        </div>
+        <a class="button primary" href="#contact" data-cart-close>Điền thông tin tư vấn</a>
+      </div>
+    </aside>
+
+    <aside class="auth-modal" data-auth-modal aria-hidden="true" aria-label="Đăng nhập và đăng kí">
+      <div class="auth-panel">
+        <div class="cart-head">
+          <div>
+            <p class="section-kicker">Tài khoản</p>
+            <h2 data-auth-title>Đăng nhập</h2>
+          </div>
+          <button class="icon-button" type="button" data-auth-close aria-label="Đóng tài khoản">×</button>
+        </div>
+
+        <div class="auth-user-card" data-auth-user hidden>
+          <span>Đang đăng nhập</span>
+          <strong data-auth-name></strong>
+          <p data-auth-email></p>
+          <button class="button secondary" type="button" data-auth-logout>Đăng xuất</button>
+        </div>
+
+        <div class="auth-forms" data-auth-forms>
+          <div class="auth-tabs" role="tablist" aria-label="Chọn đăng nhập hoặc đăng kí">
+            <button class="active" type="button" data-auth-mode="login">Đăng nhập</button>
+            <button type="button" data-auth-mode="register">Đăng kí</button>
+          </div>
+
+          <form class="auth-form active" data-login-form>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="ban@email.com" required />
+            </label>
+            <label>
+              Mật khẩu
+              <input type="password" name="password" placeholder="Tối thiểu 6 kí tự" required />
+            </label>
+            <button class="button primary" type="submit">Đăng nhập</button>
+          </form>
+
+          <form class="auth-form" data-register-form>
+            <label>
+              Tên của bạn
+              <input type="text" name="name" placeholder="Ví dụ: Phương" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="ban@email.com" required />
+            </label>
+            <label>
+              Mật khẩu
+              <input type="password" name="password" placeholder="Tối thiểu 6 kí tự" minlength="6" required />
+            </label>
+            <button class="button primary" type="submit">Tạo tài khoản</button>
+          </form>
+          <p class="form-message" data-auth-message aria-live="polite"></p>
+        </div>
+      </div>
+    </aside>
+
+    <div class="toast" data-toast aria-live="polite"></div>
+
+    <footer class="site-footer">
+      <strong>Copyright by Phuong Nguyen Computer</strong>
+      <span>Made w ❤️ by Phuong Me Dev</span>
+      <span>Codex - Netlify - GitHub - Firebase</span>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
